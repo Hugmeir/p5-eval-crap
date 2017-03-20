@@ -44,7 +44,6 @@ S_ck_replace_entersub_with_myeval(pTHX_ OP *entersubop, GV *namegv, SV *cv)
     op_free(entersubop);
 
     new_op = newUNOP(OP_ENTEREVAL, 0, realop);
-    op_dump(new_op);
     new_op->op_ppaddr = MY_pp_entereval_compile_only;
     return new_op;
 }

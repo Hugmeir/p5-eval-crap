@@ -2,7 +2,6 @@
 use strict;
 use warnings FATAL => 'all';
 
-use Devel::CallParser;
 use if $] < 5.014, "Devel::CallChecker";
 use if $] < 5.014, "IO::File";
 
