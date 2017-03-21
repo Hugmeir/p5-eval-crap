@@ -19,10 +19,10 @@ sub write_header {
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME             => 'eval::compile',
+    NAME             => 'eval::crap',
     AUTHOR           => q{Brian Fraser <fraserbn@gmail.com>},
-    VERSION_FROM     => 'lib/eval/compile.pm',
-    ABSTRACT_FROM    => 'lib/eval/compile.pm',
+    VERSION_FROM     => 'lib/eval/crap.pm',
+    ABSTRACT_FROM    => 'lib/eval/crap.pm',
     LICENSE          => 'Artistic_2_0',
     PL_FILES         => {},
     MIN_PERL_VERSION => 5.008008,

@@ -1,4 +1,4 @@
-package eval::compile;
+package eval::crap;
 use strict;
 use warnings;
 
@@ -17,11 +17,11 @@ __END__
 
 =head1 NAME
 
-eval::compile -- compile code, but do not run it. Like perl -c!
+eval::crap -- compile code, but do not run it. Like perl -c!
 
 =head1 SYNOPSIS
 
-    use eval::compile;
+    use eval::crap;
     compile("() = 1") or do {
         my $e = $@ || 'zombie error';
         die "Code did not compile! Error: $e";
@@ -68,5 +68,14 @@ the code below is a way to get rid of new C<END> blocks:
     
     @{ B::end_av()->isa("B::AV") ? B::end_av()->object_2svref : [] }
         = @original_end_blocks;
+
+=head1 A NOTE ON THE NAME
+
+Names are hard.  I originally named this C<eval::compile>, but
+it turns out that someone had snagged that from me!  The nerve!!
+They were only five years ahead of me.
+
+In any case, now it's called C<eval::crap>, and we all get to
+live with that.
 
 =back

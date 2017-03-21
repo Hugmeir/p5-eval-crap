@@ -4,8 +4,8 @@ use warnings;
 use Test::More;
 
 BEGIN {
-    use_ok('eval::compile');
-    eval::compile->import();
+    use_ok('eval::crap');
+    eval::crap->import();
 }
 
 

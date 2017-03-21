@@ -49,13 +49,13 @@ S_ck_replace_entersub_with_myeval(pTHX_ OP *entersubop, GV *namegv, SV *cv)
 }
 
 
-MODULE = eval::compile		PACKAGE = eval::compile		
+MODULE = eval::crap		PACKAGE = eval::crap		
 
 PROTOTYPES: DISABLE
 
 BOOT:
 {
-    CV * const cv = get_cvn_flags("eval::compile::compile", 22, 1);
+    CV * const cv = get_cvn_flags("eval::crap::compile", 19, 1);
     cv_set_call_checker(cv, S_ck_replace_entersub_with_myeval, &PL_sv_undef);
 }
 
